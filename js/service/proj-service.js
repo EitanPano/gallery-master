@@ -15,7 +15,7 @@ function _createProj(name, title, desc, url, imgUrl, labels) {
         desc,
         url,
         imgUrl,
-        publishedAt: new Date(),
+        publishedAt: new Date().toJSON().slice(0,10).split('-').reverse().join('-'),
         labels,
     };
     return proj;
