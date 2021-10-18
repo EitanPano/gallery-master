@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shoes Management</title>
+</head>
+
+<body onload="onInit()" onclick="closeAllModals()">
+
+    <h1>ShoesLogo</h1>
+
+    <div class="listing-box">
+        <button class="btn btn-list" onclick="onOrderList()"><img src="icons/card-interface.png" alt="list_icon"></button>
+        <hr class="hr-top">
+    </div>
+
+
+
+    <div class="modal-new hidden" onclick="event.stopPropagation()">
+        <div class="naming-container">
+            <div class="naming-box vendor-container">
+                <label for="vendor-input">Company :&nbsp</label>
+                <input id="vendor-input" name="vendor-input" type="text">
+            </div>
+            <div class="naming-box model-container">
+                <label for="model-input">Model :&nbsp</label>
+                <input id="model-input" name="model-input" type="text">
+            </div>
+        </div>
+        <div class="price-box">
+            <label for="price-input">Price : &nbsp</label>
+            <input id="price-input" name="price-input" type="number">
+        </div>
+
+        <label class="description-label" for="description-input">Description : &nbsp</label>
+        <textarea id="description-input" name="description-input" type="textarea"></textarea>
+        <label class="url-label" for="url-input">Image Url : </label>
+        <input class="url-input" id="url-input" name="url-input" type="url">
+        <button class="btn btn-green" onclick="onAddShoe()">Add</button>
+    </div>
+
+    <div class="menu-container">
+        <button class="btn btn-new btn-green" onclick="onToggleModalNew(event)">New +</button>
+        <div class="sorting-box">
+            <p>Sort by :</p>
+            <button class="btn" value="NAME" onclick="onSetSort(this.value)">Name</button>
+            <button class="btn" value="PRICE" onclick="onSetSort(this.value)">Price</button>
+            <button class="btn" value="RATING" onclick="onSetSort(this.value)">Rating</button>
+        </div>
+    </div>
+
+    <section class="db-render">
+        <!-- render shoes cards from js here -->
+    </section>
+
+    <div class="hidden modal-details">
+        <!-- render details modal from js -->
+    </div>
+
+    <div class="paging-box">
+        <button class="prev-page" onclick="onPrevPage()">◀</button>
+        <button class="next-page" onclick="onNextPage()">▶</button>
+    </div>
+
+    <script src="js/service/utils-service.js"></script>
+    <script src="js/service/storage-service.js"></script>
+    <script src="js/service/shoes.service.js"></script>
+    <script src="js/shoes.controller.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

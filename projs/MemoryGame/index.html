@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Memory Game</h1>
+    </header>
+
+    <div class="player-info">
+        <h3 class="best-of-all"></h3>
+    </div>
+    <div class="player-info">
+        <h3 class="p-name">Playername</h3>
+        <h3>&nbsp-&nbsp</h3>
+        <h3 class="p-time"><span id="minutes">00</span> : <span id="seconds">00</span> : <span id="tens">00</span></h3>
+    </div>
+
+    <div class="menu">
+        <h1 class="win-review">Flip'em!</h1>
+        <br>
+        <p>Welcome to the "Programming memory game"</p>
+        <p>Enter your name to record the best time!</p>
+        <br>
+        <p class="switch-player hidden">Switch Player?</p>
+        <br>
+        <label for="name-input">Name: </label>
+        <input type="text" id="name-input" placeholder="Player-1">
+        <button type="button" class="play-btn" onclick="playGame()">Start</button>
+    </div>
+
+    <section class="board transperent">
+        <div class="card face-down" data-mark="1">
+            <img class="front"src="images/html5.svg" alt="1">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="1">
+            <img class="front"src="images/html5.svg" alt="1">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="2">
+            <img class="front"src="images/vue.svg" alt="2">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="2">
+            <img class="front"src="images/vue.svg" alt="2">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="3">
+            <img class="front"src="images/aurelia.svg" alt="3">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="3">
+            <img class="front"src="images/aurelia.svg" alt="3">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="4">
+            <img class="front"src="images/ember.svg" alt="4">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="4">
+            <img class="front"src="images/ember.svg" alt="4">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="5">
+            <img class="front"src="images/js-badge.svg" alt="5">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="5">
+            <img class="front"src="images/js-badge.svg" alt="5">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="6">
+            <img class="front"src="images/react.svg" alt="6">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+        <div class="card face-down" data-mark="6">
+            <img class="front"src="images/react.svg" alt="6">
+            <img class="back" src="images/backbone.svg" alt="Logo">
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
