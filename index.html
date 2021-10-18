@@ -31,10 +31,25 @@
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
   <aside class="offcanvas-aside">
-    <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact -->
-    <section>
+    <section class="text-center">
       <h4>Contact Me</h4>
+      <form>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="yourmail@mail.com">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-4">
+          <label for="inputSubject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="inputSubject" placeholder="Subject here">
+        </div>
+        <div class="mb-4">
+          <label for="inputFloatingText" class="form-label">Message Body</label>
+          <textarea class="form-control" id="inputFloatingText" rows="8" placeholder="Leave your comment here"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="contactUs()">Submit</button>
+      </form>
     </section>
 
   </aside>
@@ -42,7 +57,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">EP Development</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
