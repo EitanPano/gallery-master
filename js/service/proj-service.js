@@ -3,7 +3,9 @@
 let gProjs;
 _createProjs();
 
-console.log(gProjs);
+function getProjs() {
+    return gProjs;
+}
 
 function _createProj(name, title, desc, url, imgUrl, labels) {
     const proj = {
@@ -22,11 +24,11 @@ function _createProj(name, title, desc, url, imgUrl, labels) {
 function _createProjs() {
     const projs = [
         _createProj(
-            "Minersweeper",
+            "Minesweeper",
             "Don't Blow Up",
             "in progress",
             "https://eitanpano.github.io/Minesweeper/",
-            "../../img/minesweeper.png",
+            "img/portfolio/minesweeper.png",
             ["Matrixes", "Css"],
         ),
     ];
