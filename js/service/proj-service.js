@@ -59,7 +59,7 @@ function _createProjs() {
             "ShoesManager",
             "Manage your shoes store",
             "You may use this crud based app to manage your shoes, basically it's not even done.",
-            "projs/ShoeManagement",
+            "https://eitanpano.github.io/shoes-manager/",
             "img/portfolio/shoesmanager.jpg",
             ["CRUD", "MVC"],
         ),
